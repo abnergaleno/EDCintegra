@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+/Users/abnergaleno/git/EDCintegra/IntegraESB_eclipsews/.metadata/.plugins/org.eclipse.jdt.core
