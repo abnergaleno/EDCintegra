@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api context="/integra" name="api_integra" xmlns="http://ws.apache.org/ns/synapse">
-  <resource methods="GET" protocol="http">
+  <resource methods="POST GET" protocol="http">
     <inSequence>
-      <send/>
+      <loopback/>
     </inSequence>
-    <outSequence/>
+    <outSequence>
+      <property name="messageType" scope="axis2" type="STRING" value="text/plain"/>
+      <payloadFactory media-type="xml">
+        <format>
+          <response xmlns=""> ERROR: url is either wrong or restricted</response>
+        </format>
+        <args/>
+      </payloadFactory>
+      <send/>
+    </outSequence>
+    <faultSequence/>
+  </resource>
+  <resource methods="GET" protocol="http" url-mapping="/tasks">
+    <inSequence>
+      <sequence description="" key="gov:esb_config/seq_logfull.xml"/>
+      <send>
+        <endpoint key="gov:/esb_config/ep_integra.xml"/>
+      </send>
+    </inSequence>
+    <outSequence>
+      <property description="returnasapphtml" name="ContentType"
+        scope="default" type="STRING" value="application/html"/>
+      <send/>
+    </outSequence>
     <faultSequence/>
   </resource>
 </api>

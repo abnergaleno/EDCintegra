@@ -11,4 +11,15 @@
          <mediaType>application/vnd.wso2.esb.endpoint</mediaType>
       </item>
    </artifact>
+   <artifact name="seq_logfull"
+             groupId="ph.com.energy.integra.resource"
+             version="1.0.0"
+             type="registry/resource"
+             serverRole="EnterpriseServiceBus">
+      <item>
+         <file>seq_logfull.xml</file>
+         <path>/_system/governance/esb_config</path>
+         <mediaType>application/vnd.wso2.sequence</mediaType>
+      </item>
+   </artifact>
 </artifacts>

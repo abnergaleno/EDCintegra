@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><resources>
     <item>
-        <file>ep_integra.xml</file>
+        <file>seq_logfull.xml</file>
         <path>/_system/governance/esb_config</path>
-        <mediaType>application/vnd.wso2.esb.endpoint</mediaType>
+        <mediaType>application/vnd.wso2.sequence</mediaType>
     </item>
 </resources>
