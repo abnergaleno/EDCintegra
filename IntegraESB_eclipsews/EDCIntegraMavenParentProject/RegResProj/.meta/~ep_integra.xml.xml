@@ -1,0 +1,3 @@
+<resource name="ep_integra.xml" isCollection="false" path="/_system/governance/esb_config/RegResProj/ep_integra.xml" registryUrl="https://localhost:9443/registry" md5="5671f9b2c848bcea061ac71fefc6cc6d">
+   <mediaType>application/vnd.wso2.esb.endpoint</mediaType>
+<creator>admin</creator><lastUpdater>admin</lastUpdater><description/><uuid/></resource>

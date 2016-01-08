@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/integra" name="api_integra" xmlns="http://ws.apache.org/ns/synapse">
+  <resource methods="GET" protocol="http" url-mapping="/tasks*">
+    <inSequence>
+      <send/>
+    </inSequence>
+    <outSequence>
+      <send/>
+    </outSequence>
+    <faultSequence/>
+  </resource>
+  <resource protocol="http">
+    <inSequence>
+      <loopback/>
+    </inSequence>
+    <outSequence>
+      <payloadFactory description="plaintextresponse_notallowed" media-type="xml">
+        <format>
+          <response xmlns="">Direct access to this parent url is not allowed </response>
+        </format>
+        <args/>
+      </payloadFactory>
+      <send/>
+    </outSequence>
+    <faultSequence/>
+  </resource>
+</api>

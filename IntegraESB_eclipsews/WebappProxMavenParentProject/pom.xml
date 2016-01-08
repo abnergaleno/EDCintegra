@@ -2,16 +2,15 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ph.com.energy.integra</groupId>
-  <artifactId>MavenParentProject</artifactId>
+  <groupId>ph.com.energy.integra.test.webapp.prox</groupId>
+  <artifactId>WebappProxMavenParentProject</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
-  <name>MavenParentProject</name>
-  <description>MavenParentProject</description>
+  <name>WebappProxMavenParentProject</name>
+  <description>WebappProxMavenParentProject</description>
   <modules>
-    <module>RegResProj</module>
-    <module>ESBconfig</module>
-    <module>ESBconfig</module>
+    <module>WebapProxESBconfig</module>
+    <module>CAR</module>
   </modules>
   <build>
     <plugins>
