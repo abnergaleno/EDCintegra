@@ -3,33 +3,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ph.com.energy.integra</groupId>
-  <artifactId>CARdeploy</artifactId>
+  <artifactId>CARdeploy01</artifactId>
   <version>1.0.0</version>
   <packaging>carbon/application</packaging>
-  <name>CARdeploy</name>
-  <description>CARdeploy</description>
+  <name>CARdeploy01</name>
+  <description>CARdeploy01</description>
   <properties>
-    <ph.com.energy.integra.resource_._seq_logfull>capp/EnterpriseServiceBus</ph.com.energy.integra.resource_._seq_logfull>
-    <ph.com.energy.integra.resource_._ep_integra>capp/EnterpriseServiceBus</ph.com.energy.integra.resource_._ep_integra>
-    <ph.com.energy.integra.api_._api_integra>capp/EnterpriseServiceBus</ph.com.energy.integra.api_._api_integra>
+    <ph.com.energy.integra.api_._api_integra01>capp/EnterpriseServiceBus</ph.com.energy.integra.api_._api_integra01>
     <artifact.types>jaggery/app=zip,service/rule=aar,lib/library/bundle=jar,event/receiver=xml,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/message-store=xml,synapse/proxy-service=xml,event/execution-plan=siddhiql,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/inbound-endpoint=xml,synapse/sequence=xml,synapse/configuration=xml,lib/registry/handlers=jar,synapse/task=xml,service/meta=xml,webapp/jaxws=war,synapse/api=xml,synapse/lib=zip,bpel/workflow=zip,lib/registry/filter=jar,service/dataservice=dbs,event/publisher=xml,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/event-source=xml,synapse/template=xml,event/stream=json,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>ph.com.energy.integra.resource</groupId>
-      <artifactId>ep_integra</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>ph.com.energy.integra.resource</groupId>
-      <artifactId>seq_logfull</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
       <groupId>ph.com.energy.integra.api</groupId>
-      <artifactId>api_integra</artifactId>
+      <artifactId>api_integra01</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

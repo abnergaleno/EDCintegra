@@ -11,9 +11,7 @@
   <modules>
     <module>ESBconfig</module>
     <module>ESBconfig</module>
-    <module>RegResProj</module>
-    <module>../WebappProxMavenParentProject/CAR</module>
-    <module>CARdeploy</module>
+    <module>CARdeploy01</module>
   </modules>
   <build>
     <plugins>
